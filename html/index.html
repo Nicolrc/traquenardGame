@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>jeux du des</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <p>Jeu du dès</p>
+                    <a href="#" class="logo">
+                        <img src="" alt="">
+                    </a>
+                <div class="menu-parameter">
+                    <input type="button" id="btn-parameter" value="Parametre">
+                    <div class="parameter">
+                    <label for="nb-des">Nombre de dès</label><input type="number" id="nb-des" min="1" max="6"/>
+                    <input type="button" id="ajouter-joueur" value="Ajouter un joueur"/>
+                    <input type="button" id="stat" class="stat" value="Stat des joueurs"/>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Modale  -->
+            <div id="modale" class="modale">
+                <!--Vue1 : ajouter joueur-->
+                <div id="vue-ajouter-joueur" class="vue">
+                    <h3>Ajouter un joueur</h3>
+                    <label for="nom-joueur">Ajoute un joueur</label><input type="text" name="nom-joueur" id="nom-joueur">
+                    <input type="button" name="ajouter-nom-joueur" id="ajouter-nom-joueur" value="Ajouter">
+                    <input type="button" name="joueur-enregistre" id="joueur-enregistre" value="Pseudo dejà ajouté">
+                    <div class="liste-joueur">
+                        <h4>Liste des joueurs en jeu :</h4>
+                        <ul>
+                        </ul>
+                    </div>
+                    <input type="submit" name="valider-joueurs" id="valider-joueurs" value="Valider">
+                    <input type="button" name="fermer-modale-joueur" id="fermer-modale-joueur" value="Fermer">
+                </div>
+
+                <!-- Vue2 reprendre joueur existant -->
+                <div id="vue-ancien-joueur" class="vue">
+                    <h3>Pseudo déjà ajouté</h3>
+                    <div class="liste-ancien-joueur">
+                        <ul></ul>
+                    </div>
+                    <input type="submit" name="valider-ancien-joueurs" id="valider-ancien-joueurs" value="Valider">
+                    <input type="button" name="retour-nouveau-joueur" id="retour-nouveau-joueur" value="Retour"></input>
+                </div>
+            </div>
+
+            <div class="overlay"></div>
+        </heade/r>
+        <main class="container">
+            <section id="zone-des">
+                <h2>Lancer de dès</h2>
+                <div class="zone-jeu">
+                    <aside class="joueurs">
+                        <!-- Liste dynamique des joueurs-->
+                    </aside>
+                    <div class="des">
+                        <!-- Dés générés en JS -->
+                    </div>
+                </div>
+                <input type="button" name="btn-lancer-Des" id="btn-lancer-Des" value="Lancer le(s) dès">
+            </section>
+        </main>
+        <div id="notification" class="hidden">Joueur ajouté avec succès !</div>
+    </body>
+</html>
