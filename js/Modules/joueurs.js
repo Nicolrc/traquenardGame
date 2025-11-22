@@ -81,8 +81,9 @@ export const Joueurs =
             const li = document.createElement('li');
             li.textContent = nomJoueur;
 
-            const btnSupprimer = document.createElement('span');
-            btnSupprimer.textContent = 'X';
+            const btnSupprimer = document.createElement('img');
+            btnSupprimer.src = '../img/poubelle.svg';
+            btnSupprimer.alt = 'Supprimer'
             btnSupprimer.classList.add('supprJoueur');
             btnSupprimer.addEventListener('click', () => {
                 this.retirerJoueurActif(nomJoueur);
