@@ -10,16 +10,25 @@
     <body>
         <header>
             <nav class="menu">
-                <p>Jeu du dès</p>
-                    <a href="#" class="logo">
-                        <img src="" alt="">
-                    </a>
+                <!-- <p>Jeu du dès</p> -->
+                <a href="#" class="logo">
+                    <img src="../img/logo.svg" alt="">
+                </a>
                 <div class="menu-parameter">
-                    <input type="button" id="btn-parameter" value="Parametre">
+                    <!-- <input type="button" id="btn-parameter" value="Parametre"> -->
+                    <button id="btn-parameter" class="icon-button">
+                        <img src="../img/parametre.svg" alt="Paramètres">
+                    </button>
                     <div class="parameter">
+                    <h3>Paremetre</h3>
                     <label for="nb-des">Nombre de dès</label><input type="number" id="nb-des" min="1" max="6"/>
-                    <input type="button" id="ajouter-joueur" value="Ajouter un joueur"/>
-                    <input type="button" id="stat" class="stat" value="Stat des joueurs"/>
+                    <input type="submit" id="valider-des" class="validation" value="Valider"/>
+
+                    <hr class="separator">
+
+                    <label>Gestion des joueurs</label>
+                    <input type="button" id="ajouter-joueur" class="btn-dans-parametre" value="Ajouter un joueur"/>
+                    <input type="button" id="stat" class="btn-dans-parametre" value="Stat des joueurs"/>
                     </div>
                 </div>
             </nav>

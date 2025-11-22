@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.13 178.13">
+  <defs>
+    <style>
+      .b {
+        fill: none;
+      }
+
+      .b, .c {
+        stroke: #400101;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+
+      .d {
+        fill: #fff;
+      }
+
+      .e {
+        opacity: .25;
+      }
+
+      .c {
+        fill: #ffc50f;
+      }
+    </style>
+  </defs>
+  <rect class="c" x="4" y="4" width="170.13" height="170.13" rx="38.85" ry="38.85"/>
+  <g class="e">
+    <path class="d" d="M151.12,9.36c5.99,7.75,9.56,17.47,9.56,28.03v78.33c0,25.35-20.55,45.9-45.9,45.9H36.45c-7.78,0-15.11-1.94-21.53-5.36,8.39,10.87,21.54,17.87,36.34,17.87h78.33c25.35,0,45.9-20.55,45.9-45.9V49.9c0-17.57-9.87-32.82-24.37-40.54Z"/>
+  </g>
+  <g>
+    <rect class="d" x="17.74" y="34.85" width="10.21" height="10.21"/>
+    <rect class="d" x="24.04" y="25.31" width="10.21" height="10.21"/>
+    <rect class="d" x="34.08" y="18.51" width="10.21" height="10.21"/>
+  </g>
+  <g>
+    <polygon class="d" points="73.76 44.23 73.76 50.87 60.5 50.87 60.5 57.5 73.76 57.5 80.39 57.5 80.39 50.87 80.39 44.23 73.76 44.23"/>
+    <polygon class="d" points="101.99 43.8 101.99 50.44 115.25 50.44 115.25 57.07 101.99 57.07 95.35 57.07 95.35 50.44 95.35 43.8 101.99 43.8"/>
+    <rect class="d" x="81.31" y="37.39" width="13.45" height="5.26"/>
+    <polygon class="d" points="101.99 137.82 101.99 131.18 115.25 131.18 115.25 124.55 101.99 124.55 95.35 124.55 95.35 131.18 95.35 137.82 101.99 137.82"/>
+    <polygon class="d" points="73.76 138.25 73.76 131.62 60.5 131.62 60.5 124.98 73.76 124.98 80.39 124.98 80.39 131.62 80.39 138.25 73.76 138.25"/>
+    <rect class="d" x="80.99" y="139.4" width="13.45" height="5.26" transform="translate(175.42 284.07) rotate(180)"/>
+    <rect class="d" x="116.24" y="132.7" width="12.42" height="5.26" transform="translate(244.91 270.66) rotate(180)"/>
+    <rect class="d" x="126.34" y="122.82" width="12.42" height="5.26" transform="translate(7.1 258) rotate(-90)"/>
+    <rect class="d" x="99.2" y="88.75" width="22.43" height="5.26" transform="translate(19.03 201.8) rotate(-90)"/>
+    <rect class="d" x="100.93" y="73.25" width="5.13" height="5.26" transform="translate(27.61 179.37) rotate(-90)"/>
+    <rect class="d" x="100.93" y="104.03" width="5.13" height="5.26" transform="translate(-3.17 210.16) rotate(-90)"/>
+    <rect class="d" x="54.28" y="88.75" width="22.43" height="5.26" transform="translate(-25.88 156.88) rotate(-90)"/>
+    <rect class="d" x="76.74" y="110.81" width="22.43" height="5.26"/>
+    <rect class="d" x="76.74" y="66.15" width="22.43" height="5.26"/>
+    <rect class="d" x="69.85" y="73.25" width="5.13" height="5.26" transform="translate(-3.46 148.3) rotate(-90)"/>
+    <rect class="d" x="69.85" y="104.03" width="5.13" height="5.26" transform="translate(-34.25 179.08) rotate(-90)"/>
+    <rect class="d" x="47.36" y="132.7" width="12.42" height="5.26"/>
+    <rect class="d" x="37.27" y="122.82" width="12.42" height="5.26" transform="translate(-81.97 168.93) rotate(-90)"/>
+    <rect class="d" x="116.24" y="43.87" width="12.42" height="5.26" transform="translate(244.91 92.99) rotate(180)"/>
+    <rect class="d" x="126.34" y="53.74" width="12.42" height="5.26" transform="translate(188.92 -76.17) rotate(90)"/>
+    <rect class="d" x="47.36" y="43.87" width="12.42" height="5.26"/>
+    <rect class="d" x="37.27" y="53.74" width="12.42" height="5.26" transform="translate(99.85 12.89) rotate(90)"/>
+    <polygon class="d" points="134.88 76.7 128.25 76.7 128.25 63.43 121.62 63.43 121.62 76.7 121.62 83.33 128.25 83.33 134.88 83.33 134.88 76.7"/>
+    <polygon class="d" points="135.31 104.92 128.68 104.92 128.68 118.19 122.05 118.19 122.05 104.92 122.05 98.29 128.68 98.29 135.31 98.29 135.31 104.92"/>
+    <rect class="d" x="132.38" y="88.34" width="13.45" height="5.26" transform="translate(230.07 -48.13) rotate(90)"/>
+    <polygon class="d" points="40.51 76.7 47.14 76.7 47.14 63.43 53.77 63.43 53.77 76.7 53.77 83.33 47.14 83.33 40.51 83.33 40.51 76.7"/>
+    <polygon class="d" points="40.07 104.92 46.71 104.92 46.71 118.19 53.34 118.19 53.34 104.92 53.34 98.29 46.71 98.29 40.07 98.29 40.07 104.92"/>
+    <rect class="d" x="29.57" y="88.34" width="13.45" height="5.26" transform="translate(127.26 54.68) rotate(90)"/>
+  </g>
+  <rect class="b" x="4" y="4" width="170.13" height="170.13" rx="38.85" ry="38.85"/>
+</svg>
