@@ -105,8 +105,9 @@ export const Joueurs =
             li.textContent = nomJoueur;
 
             // Bouton ajouter
-            const btnAjouter = document.createElement('span');
-            btnAjouter.textContent = '+';
+            const btnAjouter = document.createElement('img');
+            btnAjouter.src = '../img/plus.svg';
+            btnAjouter.alt = 'Ajouter un joueur'
             btnAjouter.classList.add('ajouterJoueur');
             btnAjouter.addEventListener('click', () => {
                 if (this.ajouterAncienJoueur(nomJoueur)){
@@ -116,8 +117,9 @@ export const Joueurs =
             });
 
             // Bouton supprimer
-            const btnSupprimer = document.createElement('span');
-            btnSupprimer.textContent = 'X';
+            const btnSupprimer = document.createElement('img');
+            btnSupprimer.src = '../img/poubelle.svg';
+            btnSupprimer.alt = 'Supprimer'
             btnSupprimer.classList.add('supprJoueur');
             btnSupprimer.addEventListener('click', () => {
                 this.supprimerJoueurSauvegarde(nomJoueur);

@@ -37,27 +37,28 @@
             <div id="modale" class="modale">
                 <!--Vue1 : ajouter joueur-->
                 <div id="vue-ajouter-joueur" class="vue">
-                    <h3>Ajouter un joueur</h3>
-                    <label for="nom-joueur">Ajoute un joueur</label><input type="text" name="nom-joueur" id="nom-joueur">
-                    <input type="button" name="ajouter-nom-joueur" id="ajouter-nom-joueur" value="Ajouter">
-                    <input type="button" name="joueur-enregistre" id="joueur-enregistre" value="Pseudo dejà ajouté">
+                    <h3>Ajouter une grosse ciasse</h3>
+                    <div class="conteneur-ajout">
+                        <input type="text" name="nom-joueur" id="nom-joueur" class="input">
+                        <input type="button" name="ajouter-nom-joueur" id="ajouter-nom-joueur" class="validation" value="Ajouter">
+                        <input type="button" name="joueur-enregistre" id="joueur-enregistre" class="btn-dans-parametre" value="Pseudo dejà ajouté">
+                    </div>
                     <div class="liste-joueur">
-                        <h4>Liste des grosses caisses en jeux :</h4>
+                        <h3>Liste des grosses caisses en jeux :</h3>
                         <ul>
                         </ul>
                     </div>
-                    <input type="submit" name="valider-joueurs" id="valider-joueurs" value="Valider">
-                    <input type="button" name="fermer-modale-joueur" id="fermer-modale-joueur" value="Fermer">
+                    <input type="submit" name="valider-joueurs" class="validation" id="validation-joueur" value="Valider">
+                    <input type="button" name="fermer-modale-joueur" class="btn-rouge" id="fermer-modale-joueur" value="Fermer">
                 </div>
 
                 <!-- Vue2 reprendre joueur existant -->
                 <div id="vue-ancien-joueur" class="vue">
-                    <h3>Pseudo déjà ajouté</h3>
+                    <h3>Liste des grosses caisse déjà ajouté :</h3>
                     <div class="liste-ancien-joueur">
                         <ul></ul>
                     </div>
-                    <input type="submit" name="valider-ancien-joueurs" id="valider-ancien-joueurs" value="Valider">
-                    <input type="button" name="retour-nouveau-joueur" id="retour-nouveau-joueur" value="Retour"></input>
+                    <input type="button" name="retour-nouveau-joueur"  class="btn-rouge" id="retour-nouveau-joueur" value="Retour"></input>
                 </div>
             </div>
 

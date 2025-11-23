@@ -39,7 +39,7 @@ nav
 
 .logo:hover
 {
-   transform: scale(1.05);
+transform: scale(1.05);
 }
 /*===========================================================================*/
 /* Style parametre */
@@ -92,7 +92,6 @@ nav
 
 .btn-dans-parametre
 {
-    margin-top: 10px;
     padding: 10px;
     color: #400101;
     font-size: 18px;
@@ -104,7 +103,7 @@ nav
 }
 
 .parameter.open {
-  right: 0;
+right: 0;
 }
 
 .validation
@@ -149,16 +148,16 @@ nav
 }
 
 .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background: rgba(0, 0, 0, 0.3);
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+transition: opacity 0.3s ease;
 }
 .overlay.active {
     opacity: 0;
@@ -176,9 +175,9 @@ main
 }
 
 .zone-jeu {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem; 
+display: flex;
+flex-direction: column;
+gap: 1rem; 
 }
 
 /*===========================================================================*/
@@ -196,23 +195,46 @@ main
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     border: 3px solid #400101;
+    box-shadow: -5px 5px 0px 5px #ffc50f;
 }
 
 .vue{
-    padding: 30px;
+    padding: 20px;
     background-color: #fdfaf4;
     font-family: 'pixel';
+
+    width: auto; 
+    min-width: 0;
+    max-width: 90vw;
+}
+
+.conteneur-ajout
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input
+{
+    padding: 10px;
+    color: #400101;
+    font-family: 'pixel';
+    font-size: 20px;
+    border: 2px solid #400101;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.liste-joueur
+{
+    margin-top: 50px;
 }
 
 .liste-joueur ul
 {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .liste-joueur ul li
@@ -221,10 +243,31 @@ main
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    margin: 5px;
+    padding: 5px;
     border: 2px solid #2198a6;
     border-radius: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.liste-ancien-joueur ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+.liste-ancien-joueur ul li
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: 2px solid #2198a6;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+
 }
 
 .ajout-joueur{
@@ -236,23 +279,32 @@ main
     gap: 10px;
 }
 
+.btn-rouge
+{
+    padding: 10px;
+    color: white;
+    background-color: #f25430;
+    border: 3px solid #400101;
+    border-radius: 10px;
+    font-family: 'pixel';
+    font-size: 20px;
+    cursor: pointer;
+}
+
 .hidden{
     display: none;
 }
 
 .supprJoueur{
-    width: 10%;
+    max-width: 40px;
+    width: 18%;
     cursor: pointer;
 }
 
 
 .ajouterJoueur{
-    color: white;
-    cursor: pointer;
-}
-
-.ajouterJoueur:hover{
-    color: green;
+    max-width: 40px;
+    width: 18%;
     cursor: pointer;
 }
 
