@@ -1,5 +1,6 @@
 import { UI } from './modules/ui.js';
-import { Joueurs } from './modules/joueurs.js'
+import { Joueurs } from './modules/joueurs.js';
+import { jeu } from './modules/jeu.js';
 
 window.addEventListener('DOMContentLoaded', () => {
     //initialisation
@@ -47,11 +48,17 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Permettre l'ajout avec la touche Entrée
+    // === Permettre l'ajout avec la touche Entrée ===
     document.getElementById('nom-joueur').addEventListener('keypress', (e) => {
         if(e.key === 'Enter')
         {
             document.getElementById('ajouter-nom-joueur').click();
         }
+    })
+
+    document.getElementById('valider-des').addEventListener('click', () => {
+        const nombreDeDes = jeu.getNombreDeDes();
+        jeu.créerDesSvg(nombreDeDes);
+        jeu.initialiserDes();
     })
 })

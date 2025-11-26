@@ -124,7 +124,7 @@ right: 0;
 
 .icon-button
 {
-    width: 110%;
+    width: 100%;
     max-width: 250px;
     height: auto;
     background: none; 
@@ -136,7 +136,8 @@ right: 0;
 
 .icon-button img
 {
-    width: 30%;
+    margin: 20px 20px 20px 20px;;
+    width: 50px;
     max-width: 120px;
     height: auto;
     transition: transform 0.3s ease-out;
@@ -327,4 +328,22 @@ gap: 1rem;
     padding: 10px 15px;
     border-radius: 5px;
     z-index: 1000;
+}
+
+/*===========================================================================*/
+/*Gestion des*/
+/*===========================================================================*/
+
+.des {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 40px;
+    padding: 20px;
+}
+
+.des svg {
+    width: 180px; 
+    height: 180px; 
+    max-width: 100%; 
 }
