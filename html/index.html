@@ -34,7 +34,7 @@
                 </div>
             </nav>
 
-            <!-- Modale  -->
+            <!-- Modale ajout joueur -->
             <div id="modale" class="modale">
                 <!--Vue1 : ajouter joueur-->
                 <div id="vue-ajouter-joueur" class="vue">
@@ -63,11 +63,30 @@
                 </div>
             </div>
 
+            <!-- Modale paris  -->
+            <div id="modale-paris" class="modale">
+                <!--Vue1 : ajouter joueur-->
+                <h3>C'est l'heure du paris !</h3>
+                <div id="nom-parieur"></div>
+                <div class="conteneur-ajout">
+                    <input type="number" name="chiffre-paris" id="chiffre-paris" class="input">
+                    <input type="button" name="valider-paris" id="valider-paris" class="" value="Valider">
+                </div>
+                <div class="liste-joueur">
+                    <h3>Liste des grosses caisses en jeux :</h3>
+                    <ul>
+                    </ul>
+                </div>
+                <input type="submit" name="valider-joueurs" class="validation" id="validation-joueur" value="Valider">
+                <input type="button" name="fermer-modale-joueur" class="btn-rouge" id="fermer-modale-joueur" value="Fermer">
+            </div>
+
             <div class="overlay"></div>
         </header>
         <main class="container">
             <section id="zone-des">
                 <h2>Lancer de dès</h2>
+                <div id="resultat-total"></div>
                 <div class="zone-jeu">
                     <aside class="joueurs">
                         <!-- Liste dynamique des joueurs-->
@@ -76,7 +95,10 @@
                         <!-- Dés générés en JS -->
                     </div>
                 </div>
-                <input type="button" name="btn-lancer-Des" id="btn-lancer-Des" value="Lancer le(s) dès">
+                <div>
+                    <input type="button" name="btn-lancer-Des" id="btn-lancer-Des" value="Lancer le(s) dès">
+                    <input type="button" name="btn-lancer-partie" id="btn-lancer-partie" value="Lancer les paries">
+                </div>
             </section>
         </main>
         <div id="notification" class="hidden">Joueur ajouté avec succès !</div>

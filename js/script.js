@@ -54,11 +54,15 @@ window.addEventListener('DOMContentLoaded', () => {
         {
             document.getElementById('ajouter-nom-joueur').click();
         }
-    })
+    });
 
     document.getElementById('valider-des').addEventListener('click', () => {
         const nombreDeDes = jeu.getNombreDeDes();
         jeu.créerDesSvg(nombreDeDes);
         jeu.initialiserDes();
+    });
+
+    document.getElementById('btn-lancer-Des').addEventListener('click', () =>{
+        jeu.lancerLesDes();
     })
 })

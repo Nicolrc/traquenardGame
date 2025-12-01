@@ -47,5 +47,34 @@ export const jeu =
             desHTML += this.créerDesSvg(1); 
         }
         zoneDes.innerHTML = desHTML;
+    },
+
+    lancerLesDes()
+    {
+        const desPresent = document.querySelector('.des').querySelectorAll('svg');
+        const nombreDes = desPresent.length;
+
+        if(nombreDes === 0)
+        {
+            alert("Il n'y a pas de dés à lancer");
+        }
+    
+        const zoneDes = document.querySelector('.des'); 
+        let desHTML = '';
+        const resultatDes = [];
+        let resultatFinal = 0;
+        for (let i = 0; i < nombreDes; i++) 
+        {
+            const valeurAleatoire = Math.floor(Math.random() * 6) + 1;
+            desHTML += this.créerDesSvg(valeurAleatoire);
+            resultatDes.push(valeurAleatoire);
+        }
+        for (let i = 0; i < resultatDes.length; i++)
+        {
+            resultatFinal += resultatDes[i];
+            console.log(resultatFinal);
+        }
+        document.getElementById('resultat-total').textContent = `Score total: ${resultatFinal}`;
+        zoneDes.innerHTML = desHTML;
     }
 }
