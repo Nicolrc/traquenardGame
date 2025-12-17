@@ -5,6 +5,7 @@ export const UI = {
         contenuParameter: null,
         vueAjouter : null,
         vueListe : null,
+        vueParis : null,
         notification: null
     },
 
@@ -14,6 +15,7 @@ export const UI = {
         this.elements.contenuParameter = document.querySelector('.parameter');
         this.elements.vueAjouter = document.getElementById('vue-ajouter-joueur');
         this.elements.vueListe = document.getElementById('vue-ancien-joueur');
+        this.elements.vueParis = document.getElementById('vue-modale-paris');
         this.elements.notification = document.getElementById('notification');
     },
 
@@ -47,11 +49,19 @@ export const UI = {
         {
             this.elements.vueAjouter.classList.remove('hidden');
             this.elements.vueListe.classList.add('hidden');
+            this.elements.vueParis.classList.add('hidden');
         } 
         else if (nomVue === 'liste')
         {
             this.elements.vueAjouter.classList.add('hidden');
             this.elements.vueListe.classList.remove('hidden');
+            this.elements.vueParis.classList.add('hidden');
+        }
+        else if (nomVue === 'paris')
+        {
+            this.elements.vueAjouter.classList.add('hidden');
+            this.elements.vueListe.classList.add('hidden');
+            this.elements.vueParis.classList.remove('hidden');
         }
         this.fermerMenuParametre();
     },

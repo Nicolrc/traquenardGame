@@ -61,24 +61,17 @@
                     </div>
                     <input type="button" name="retour-nouveau-joueur"  class="btn-rouge" id="retour-nouveau-joueur" value="Retour"></input>
                 </div>
-            </div>
 
-            <!-- Modale paris  -->
-            <div id="modale-paris" class="modale">
-                <!--Vue1 : ajouter joueur-->
-                <h3>C'est l'heure du paris !</h3>
-                <div id="nom-parieur"></div>
-                <div class="conteneur-ajout">
-                    <input type="number" name="chiffre-paris" id="chiffre-paris" class="input">
-                    <input type="button" name="valider-paris" id="valider-paris" class="" value="Valider">
+                <!-- Vue3 paris paris  -->
+                <div id="vue-modale-paris" class="vue">
+                    <h3>C'est l'heure du paris !</h3>
+                    <div id="nom-parieur"></div>
+                    <div class="conteneur-ajout">
+                        <input type="number" name="chiffre-paris" id="chiffre-paris" class="input">
+                        <input type="button" name="valider-paris" id="valider-paris" class="validation" value="Valider">
+                        <input type="button" name="fermer-modale-joueur" id="fermer-paris" class="btn-rouge" value="Fermer">
+                    </div>
                 </div>
-                <div class="liste-joueur">
-                    <h3>Liste des grosses caisses en jeux :</h3>
-                    <ul>
-                    </ul>
-                </div>
-                <input type="submit" name="valider-joueurs" class="validation" id="validation-joueur" value="Valider">
-                <input type="button" name="fermer-modale-joueur" class="btn-rouge" id="fermer-modale-joueur" value="Fermer">
             </div>
 
             <div class="overlay"></div>

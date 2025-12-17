@@ -14,8 +14,13 @@ window.addEventListener('DOMContentLoaded', () => {
         UI.afficherVue('ajouter');
     });
 
-    document.getElementById('fermer-modale-joueur').addEventListener('click', () => {
-        UI.fermerModale();
+    const boutonsFermer = document.querySelectorAll('[name="fermer-modale-joueur"]');
+
+    // On boucle sur chaque bouton trouvé
+    boutonsFermer.forEach(bouton => {
+        bouton.addEventListener('click', () => {
+            UI.fermerModale();
+        });
     });
 
     // === Navigation entre les vues
@@ -23,6 +28,11 @@ window.addEventListener('DOMContentLoaded', () => {
         UI.afficherVue('liste');
         Joueurs.afficherJoueursSauvegarde();
     });
+
+    document.getElementById('btn-lancer-partie').addEventListener('click', () => {
+        UI.ouvrirModale();
+        UI.afficherVue('paris');
+    })
 
     document.getElementById('retour-nouveau-joueur').addEventListener('click', () => {
         UI.afficherVue('ajouter');

@@ -1,10 +1,23 @@
 import { DES_SVG } from './desSvg.js';
+import { Joueurs } from './joueurs.js';
 
 export const jeu = 
 {
-    init()
+    // Stock le paris pour les tours en cours
+    parisDuTour: [],  
+    // Suivi du joueur actuel
+    indexJoueurActuel: 0,
+
+
+    enregistrerParis(nomJoueur, montantParis)
     {
-        
+        // On stock le nom di joueur et son paris du tour
+        this.parisDuTour.push({
+            Joueur : nomJoueur,
+            Paris : montantParis
+        });
+        // Si le pari est réussi, passer au joueur suivant
+        this.indexJoueurActuel++;
     },
 
     getNombreDeDes()
@@ -76,5 +89,40 @@ export const jeu =
         }
         document.getElementById('resultat-total').textContent = `Score total: ${resultatFinal}`;
         zoneDes.innerHTML = desHTML;
+
+        return resultatFinal;
+    },
+
+    determinerLePremerParieur()
+    {
+        const scoreObtenu = this.lancerLesDes();
+        const joueurEnJeu = Joueurs.joueursActifs;
+        let pireEcart = -1;
+        let joueurLePlusLoin = null;
+
+        if(this.parisDuTour.length > 0)
+        {
+            this.parisDuTour.forEach((pariActuel) =>{
+                const distance = Math.abs(pariActuel.Paris - scoreObtenu);
+                if(distance > pireEcart)
+                {
+                    pireEcart = distance;
+                    joueurLePlusLoin = pariActuel.Joueur;
+                } 
+            });
+            return joueurLePlusLoin;
+        }
+        else
+        {
+            if(joueurEnJeu.length > 0)
+            {
+                return joueurEnJeu[0];
+            }
+            else
+            {
+                UI.afficherNortification("Attention il n'y a pas de joueur en jeu");
+                return;
+            }
+        }
     }
 }
