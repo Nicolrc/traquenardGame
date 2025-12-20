@@ -106,7 +106,7 @@ export const Joueurs =
             li.textContent = nomJoueur;
 
             const btnSupprimer = document.createElement('img');
-            btnSupprimer.src = '../../img/poubelle.svg';
+            btnSupprimer.src = 'img/poubelle.svg';
             btnSupprimer.alt = 'Supprimer'
             btnSupprimer.classList.add('supprJoueur');
             btnSupprimer.addEventListener('click', () => {
@@ -130,7 +130,7 @@ export const Joueurs =
 
             // Bouton ajouter
             const btnAjouter = document.createElement('img');
-            btnAjouter.src = '../../img/plus.svg';
+            btnAjouter.src = 'img/plus.svg';
             btnAjouter.alt = 'Ajouter un joueur'
             btnAjouter.classList.add('ajouterJoueur');
             btnAjouter.addEventListener('click', () => {
@@ -142,7 +142,7 @@ export const Joueurs =
 
             // Bouton supprimer
             const btnSupprimer = document.createElement('img');
-            btnSupprimer.src = '../../img/poubelle.svg';
+            btnSupprimer.src = 'img/poubelle.svg';
             btnSupprimer.alt = 'Supprimer'
             btnSupprimer.classList.add('supprJoueur');
             btnSupprimer.addEventListener('click', () => {
