@@ -1,5 +1,6 @@
 import { Storage } from './storage.js';
 import { UI } from './ui.js'
+import { jeu } from './jeu.js';
 
 export const Joueurs = 
 {
@@ -35,6 +36,11 @@ export const Joueurs =
         Storage.saveActivePlayers(this.joueursActifs);
         Storage.saveAllPlayers(this.toutLesJoueurs);
 
+        //Met a jours le nouvel orde de jeu 
+        if(jeu.nouvelOrdreParieur.length > 0) {
+        jeu.nouvelOrdreParieur.push(joueur);
+        }
+
         return true;
     },
 
@@ -48,16 +54,29 @@ export const Joueurs =
         }
         this.joueursActifs.push(nomJoueur);
         Storage.saveActivePlayers(this.joueursActifs);
+
+        if(jeu.nouvelOrdreParieur.length > 0) {
+        jeu.nouvelOrdreParieur.push(nomJoueur);
+        }
         UI.afficherNortification(`${nomJoueur} a été ajouté aux gosses caisses !`)
 
         return true;
     },
 
-    // Retire un joeuru de la partie en cours
+    // Retire un joueur de la partie en cours
     retirerJoueurActif(nomJoueur)
     {
         this.joueursActifs = this.joueursActifs.filter(nom => nom !== nomJoueur);
         Storage.saveActivePlayers(this.joueursActifs);
+        if(jeu.nouvelOrdreParieur.length > 0) 
+        {
+            jeu.nouvelOrdreParieur = jeu.nouvelOrdreParieur.filter(nom => nom !== nomJoueur);
+            
+            if(jeu.nouvelOrdreParieur[jeu.indexJoueurActuel] === undefined) {
+                jeu.indexJoueurActuel = Math.max(0, jeu.indexJoueurActuel - 1);
+                jeu.mettreAJourAffichageParis();
+            }
+        }
         UI.afficherNortification("Une petite caisse en moins");
     },
 
@@ -69,6 +88,11 @@ export const Joueurs =
 
         Storage.saveActivePlayers(this.joueursActifs);
         Storage.saveAllPlayers(this.toutLesJoueurs);
+
+         if(jeu.nouvelOrdreParieur.length > 0) 
+        {
+        jeu.nouvelOrdreParieur = jeu.nouvelOrdreParieur.filter(nom => nom !== nomJoueur);
+        }
     },
 
     // Afficher les joueurs actifs dans l'UI
