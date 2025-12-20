@@ -1,6 +1,6 @@
-import { UI } from './Modules/ui.js';
-import { Joueurs } from './Modules/joueurs.js';
-import { jeu } from './Modules/jeu.js';
+import { UI } from './modules/ui.js';
+import { Joueurs } from './modules/joueurs.js';
+import { jeu } from './modules/jeu.js';
 
 window.addEventListener('DOMContentLoaded', () => {
     //initialisation
