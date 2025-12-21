@@ -99,7 +99,7 @@ export const jeu =
     ////////////////////////////////////////////////////////////////
     enregistrerParis(nomJoueur, montantParis)
     {
-        // On stock le nom di joueur et son paris du tour
+        // On stock le nom du joueur et son paris du tour
         this.parisDuTour.push({
             Joueur : nomJoueur,
             Paris : montantParis
