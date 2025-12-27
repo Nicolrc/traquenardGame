@@ -198,16 +198,19 @@ gap: 1rem;
     border-radius: 20px;
     border: 3px solid #400101;
     box-shadow: -5px 5px 0px 5px #ffc50f;
+    width: 90%;
+    max-width: 400px;
 }
 
 .vue{
     padding: 20px;
     background-color: #fdfaf4;
     font-family: 'pixel';
-
-    width: auto; 
     min-width: 0;
     max-width: 90vw;
+
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .conteneur-ajout
@@ -404,3 +407,8 @@ gap: 1rem;
     75% { transform: rotate(-2deg); }
     100% { transform: rotate(0deg); }
 } */
+
+.btnParis
+{
+    margin-bottom: 3px;
+}
