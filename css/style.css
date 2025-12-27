@@ -99,6 +99,7 @@ transform: scale(1.05);
     border: 3px solid #400101;
     border-radius: 10px;
     background-color: #ffc50f;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -361,3 +362,45 @@ gap: 1rem;
         justify-content: center;
     }
 }
+
+/*===========================================================================*/
+/*Gestion modale perdant*/
+/*===========================================================================*/
+/* Style spécifique pour la modale perdant */
+#vue-modale-perdant {
+    text-align: center;
+    background-color: #fdfaf4; /* Un fond légèrement teinté rouge */
+}
+
+#nom-perdant {
+    font-size: 2.5rem;
+    color: #f25430;
+    margin: 15px 0;
+    text-shadow: 2px 2px 0px #400101;
+    animation: shake 0.5s infinite; /* Optionnel : fait trembler le nom */
+}
+
+#nombre-gorge {
+    font-size: 1.8rem;
+    background: #400101;
+    color: #ffc50f;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.details-score {
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* @keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    75% { transform: rotate(-2deg); }
+    100% { transform: rotate(0deg); }
+} */

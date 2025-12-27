@@ -202,14 +202,14 @@ export const jeu =
             const tousIdentiques = this.verifierDesIdentiques();
 
             let multiplicateur = 1;
-            let messageStatus = "Plus éloigné !";
+            let messageStatus = "Jusqu'ici tout va bien ! X1";
 
             if (gagnantTrouve && tousIdentiques) {
                 multiplicateur = 3;
-                messageStatus = "BAM Traquenard !";
+                messageStatus = "Aïe aïe aïe tranquenard! X3";
             } else if (gagnantTrouve || tousIdentiques) {
                 multiplicateur = 2;
-                messageStatus = "Dommage pour toi !";
+                messageStatus = "ouïe c'est la chute du toboggan! X2 ";
             }
 
             const totalGorgees = pireEcart * multiplicateur;
